@@ -19,4 +19,5 @@
 | gen-17 | Use `static final` for repetitive string constants .                                           |
 | gen-18 | Remove unused functions.                                                                       |
 | gen-19 | Avoid console output, use a logger                                                             |
-| gen-20 | Validate inputs early and in one spot in a function call to avoid un-need processing.          |
+| gen-20 | Validate inputs early to avoid unintended consequences.                                        |
+| gen-21 | Embrace dependency injection                                                                   |
