@@ -157,9 +157,9 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 | scm-7  | Include ticket number/link in commit when available                                                             |
 | scm-8  | Merge into `main` or `dev` requested via Pull Request and must be peer reviewed and passing all required checks |
 | scm-9  | Keep Pull Request small and focused for easy review                                                             |
-| scm-9  | New project are required to have a `main` and `dev` branch                                                      |
-| scm-10 | New project are required to the `dev` branch set as the base or target branch                                   |
-| scm-11 | New project setup should limit push to `main` and `dev` to Code-Owners                                          |
+| scm-9  | New Projects are required to have a `main` and `dev` branch                                                      |
+| scm-10 | New Projects are required to the `dev` branch set as the base or target branch                                   |
+| scm-11 | New Projects setup should limit push to `main` and `dev` to Code-Owners                                          |
 
 
 
