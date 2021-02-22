@@ -45,11 +45,12 @@ Contributors must follow the following guidelines on each repository:
 - **Follow Code-Owner Requirements**: The code-owner sets the requirements and all contributors must follow them.
 - **Communication**: Contributors should document and communicate changes through commit messages and pull-requests using issue numbers.
 
+
+# General
+#include "general/general/README.md"
+
 # Tests
 #include "general/tests/README.md"
-
-# Naming
-#include "general/naming/README.md"
 
 # Dependencies
 #include "general/dependencies/README.md"
