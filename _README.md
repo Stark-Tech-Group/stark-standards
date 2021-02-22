@@ -81,3 +81,6 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 # Devops
 #include "general/devops/README.md"
+
+# Datastore
+#include "general/datastore/README.md"
