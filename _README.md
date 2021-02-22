@@ -75,3 +75,6 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 # Source Control
 #include "general/source-control/README.md"
+
+# Devops
+#include "general/source-control/README.md"
