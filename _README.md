@@ -42,8 +42,22 @@ Every source code repository can have one to many contributors. Contributors are
 
 Contributors must follow the following guidelines on each repository:
 
-- **Follow Code-Owner Requirements**: The code-owner sets the requirements and all contributors must follow them.
+- **Follow Code-Owner Requirements**: The Code-owner sets the requirements and all contributors must follow them.
 - **Communication**: Contributors should document and communicate changes through commit messages and pull-requests using issue numbers.
+
+## Special Considerations
+Code-owners may enforce special or specific requirements on a repository at any time. Below are some examples of when a Code-owner may require enhanced or specific standards of it's Contributor's.
+
+
+1.	**Personal Identifiable Information (PII)**: Repositories and\or code blocks that process, handle or store Personal Identifiable Information PII must be classified as such and must adhere to enhanced guidance following state, local and federal laws, and regulations. The Code-owners of these repositories are responsible for maintaining and enforcing additional standards.
+2.	**Federally Classified or Sensitive Data (Fed\Gov)**: Repositories and\or code blocks that process, handle or store classified or sensitive information must be classified as such and must adhere to enhanced guidance following state, local and federal laws, and regulations. The Code-owners of these repositories are responsible for maintaining and enforcing additional standards.
+3.	**Financial Transactions**: Repositories and\or code blocks that process, handle or store financial transactions must be classified as such and must adhere to enhanced guidance established by its Code-owners. Code owners of these repositories may require additional units, integration tests, specific data type usage and enhanced security among other requirements.
+4.	**Trade Secrets**: Repositories and\or code blocks that process, handle or store trade secrets must be classified as such and must adhere to enhanced guidance established by its code-owners. Code-owners of these repositories may require enhanced documentation, storage, and encryption processes among other requirements. 
+5.	**Contracts and Agreements (SLAs)**: Repositories and\or code blocks that are associated with a Service Level Agreement (SLA) or specific legally binding agreement must be classified as such. Code-owners of these repositories may require enhanced guidance that is specific to a binding agreement.
+6.	**High Performance**: Repositories and\or code blocks that consist of highly performant code must be classified as such. These types of repositories may be required to not follow best practices in favor of high-performance requirements. Code blocks or functions falling under these requirements should be noted so.
+7.	**Tools and Utilities**: Repositories that consist of only tools and utilities that support internal tasks through scripts or documentation must be classified as such. These types of repositories may be held to a higher or lower level of guidance outlined by its code owners. 
+
+
 
 # Tests
 #include "general/tests/README.md"
