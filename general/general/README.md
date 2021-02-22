@@ -20,4 +20,7 @@
 | gen-18 | Remove unused functions.                                                                       |
 | gen-19 | Avoid console output, use a logger                                                             |
 | gen-20 | Validate inputs early to avoid unintended consequences.                                        |
-| gen-21 | Embrace dependency injection                                                                   |
+| gen-21 | Embrace dependency injection when available                                                    |
+| gen-22 | Favor iterators when dealing with large collections                                            |
+| gen-23 | Avoid loading unnecessary items into collections for later filtering                           |
+
