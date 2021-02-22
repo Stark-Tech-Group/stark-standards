@@ -58,11 +58,11 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 
 
+# General
+#include "general/general/README.md"
+
 # Tests
 #include "general/tests/README.md"
-
-# Naming
-#include "general/naming/README.md"
 
 # Dependencies
 #include "general/dependencies/README.md"

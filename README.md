@@ -58,6 +58,32 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 
 
+# General
+| Code   | Description                                                                                    |
+|--------|------------------------------------------------------------------------------------------------|
+| gen-1  | Follow best practices of the language                                                          |
+| gen-2  | camelCase naming for variables.                                                                |
+| gen-3  | Uppercase constants and static.                                                                |
+| gen-4  | Capitalize first word for classes.                                                             |
+| gen-5  | Avoid global variables, use the least exposure possible.                                       |
+| gen-6  | Avoid public variables for classes. Enforce the idea of encapsulation with getters and setter. |
+| gen-7  | Avoid redundant labeling. <br/> ` book.getBookPage(1) //redundant ` vs. `book.getPage(1)`      |
+| gen-8  | Use meaning full names.  <br/> ` var returnVal = 2; ` vs. `var zoomLevel = 2;`                 |
+| gen-9  | Avoid constructors with more than 8 arguments, consider a builder or data object.              |
+| gen-10 | Consider static factory methods instead of constructors.                                       |
+| gen-11 | Enforce singleton property with a private constructor or an enum type.                         |
+| gen-12 | Don't comment out code, just remove it.                                                        |
+| gen-13 | Obey the general contract when overriding equals and hashCode.                                 |
+| gen-14 | Minimize mutability, use `final` or `const` judiciously.                                       |
+| gen-15 | Design for inheritance or prohibit it (`final` or `sealed` class).                             |
+| gen-16 | Use enums instead of int constants.                                                            |
+| gen-17 | Use `static final` for repetitive string constants .                                           |
+| gen-18 | Remove unused functions.                                                                       |
+| gen-19 | Avoid console output, use a logger                                                             |
+
+
+
+
 # Tests
 | Code   | Description                                                              |
 |--------|--------------------------------------------------------------------------|
@@ -68,22 +94,6 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 | test-5 | Embrace mock frameworks when useful.                                     |
 | test-6 | Create test, dev and prod test environments.                             |
 | test-7 | Use a logger                                                             |
-
-
-
-
-# Naming
-| Code    | Description                                                                                    |
-|---------|------------------------------------------------------------------------------------------------|
-| names-1 | camelCase naming for variables.                                                                |
-| names-2 | Uppercase constants and static.                                                                |
-| names-3 | Capitalize first word for classes.                                                             |
-| names-4 | Avoid global variables, use the least exposure possible.                                       |
-| names-5 | Avoid public variables for classes. Enforce the idea of encapsulation with getters and setter. |
-| names-6 | Avoid redundant labeling. <br/> ` book.getBookPage(1) //redundant ` vs. `book.getPage(1)`      |
-| names-7 | Use meaning full names.  <br/> ` var returnVal = 2; ` vs. `var zoomLevel = 2;`                 |
-|         |                                                                                                |
-
 
 
 
