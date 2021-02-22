@@ -221,3 +221,11 @@ The following tools are available to Stark Tech Group employees for software dev
 | devop-6  | All generated documents, reports, and artifacts will be stored with the pipeline execution                                           |
 | devop-7  | CI will be triggered on push and on PR                                                                                               |
 | devop-8  | CD will be triggered after PR into base/production branch                                                                            |
+
+
+# Datastore
+| Code | Description                                                    |
+|------|----------------------------------------------------------------|
+| ds-1 | Database changes should never be made directly on a database server.  Use database change management solutions (like liquibase) to track changesets and apply those changesets.                                   |
+
+
