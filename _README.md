@@ -45,9 +45,8 @@ Contributors must follow the following guidelines on each repository:
 - **Follow Code-Owner Requirements**: The Code-owner sets the requirements and all contributors must follow them.
 - **Communication**: Contributors should document and communicate changes through commit messages and pull-requests using issue numbers.
 
-## Special Considerations
-Code-owners may enforce special or specific requirements on a repository at any time. Below are some examples of when a Code-owner may require enhanced or specific standards of it's Contributor's.
-
+## Repository Classifications
+Code-owners may enforce special or specific requirements on a repository at any time. These specific requirements should be based on the classification of a repository. Below are some examples of when a Code-owner may require enhanced or specific standards of it's Contributor's.
 
 1.	**Personal Identifiable Information (PII)**: Repositories and\or code blocks that process, handle or store Personal Identifiable Information PII must be classified as such and must adhere to enhanced guidance following state, local and federal laws, and regulations. The Code-owners of these repositories are responsible for maintaining and enforcing additional standards.
 2.	**Federally Classified or Sensitive Data (Fed\Gov)**: Repositories and\or code blocks that process, handle or store classified or sensitive information must be classified as such and must adhere to enhanced guidance following state, local and federal laws, and regulations. The Code-owners of these repositories are responsible for maintaining and enforcing additional standards.
