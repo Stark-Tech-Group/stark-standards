@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
+      - run: npm install markdown-include --save
       - run: node .\node_modules\markdown-include\bin\cli.js .\markdown.json
       - uses: mikeal/publish-to-github-action@master
         env:
