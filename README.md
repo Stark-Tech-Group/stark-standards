@@ -1,5 +1,6 @@
 # stg-standards
 
+``` node .\node_modules\markdown-include\bin\cli.js .\markdown.json ```
 
 # Tests
 | Code   | Description                                                              | Comment |
@@ -10,6 +11,7 @@
 | test-4 | Avoid flaky test. Use retry frameworks or label flaky test if necessary. |         |
 | test-5 | Embrace mock frameworks when useful.                                     |         |
 | test-6 | Create test, dev and prod test environments.                             |         |
+| test-7 | Use a logger                                                             |         |
 
 
 
@@ -39,5 +41,24 @@
 | dep-4 | Keep dependencies in one location.                             |         |
 | dep-5 | Understand dependency licensing.                               |         |
 | dep-6 | Keep test and dev dependencies out of production environments. |         |
+
+
+
+
+# Design
+| Code  | Description                 | Comment |
+|-------|-----------------------------|---------|
+| des-1 | Design for containerization |         |
+| des-2 | Design for localization     |         |
+
+
+
+
+# Security
+| Code  | Description                             | Comment |
+|-------|-----------------------------------------|---------|
+| sec-1 | Do not commit secrets to source control |         |
+| sec-2 | Use a secrets manager                   |         |
+| sec-3 | Do not log secrets                      |         |
 
 
