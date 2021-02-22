@@ -164,7 +164,7 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 # Resources
 
-# Books
+### Books
 | Category   | Description                                                                 | Link                                                                                                                                                                                                                                                                                                                                                          |
 |------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Java       | Effective Java 3rd Edition                                                  | [Amazon](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997)                                                                                                                                                                                                                                                                                    |
@@ -175,7 +175,7 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 | General    | Clean Architecture: A Craftsman's Guide to Software Structure and Design    | [Amazon](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=pd_bxgy_img_3/139-1242530-4776209?_encoding=UTF8&pd_rd_i=0134494164&pd_rd_r=e20d6db4-c2c7-4f47-8d07-986543bc726f&pd_rd_w=60njV&pd_rd_wg=uTchM&pf_rd_p=f325d01c-4658-4593-be83-3e12ca663f0e&pf_rd_r=YY21Q43S05F5NQXNEQS8&psc=1&refRID=YY21Q43S05F5NQXNEQS8) |
 | Go         | Go Programming Language                                                     | [Amazon](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440/ref=sr_1_3?dchild=1&keywords=Golang&qid=1614015187&sr=8-3)                                                                                                                                                                                           |
 
-# Online 
+### Online 
 | Category            | Description                                             | Link                                                                                               |
 |---------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | Angular             | Angular - The Complete Guide                            | [udemy](https://www.udemy.com/course/the-complete-guide-to-angular-2/)                             |
@@ -187,7 +187,7 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 | Docker/Kubernetes   | Docker and Kubernetes: The Complete Guide               | [udemy](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/)                    |
 
 
-# Tools 
+### Tools 
 The following tools are available to Stark Tech Group employees for software development.
  - CLion
  - DataGroup
