@@ -61,7 +61,7 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 # General
 | Code   | Description                                                                                    |
 |--------|------------------------------------------------------------------------------------------------|
-| gen-1  | Follow best practices of the language                                                          |
+| gen-1  | Follow best practices of the language.                                                         |
 | gen-2  | camelCase naming for variables.                                                                |
 | gen-3  | Uppercase constants and static.                                                                |
 | gen-4  | Capitalize first word for classes.                                                             |
@@ -80,8 +80,8 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 | gen-17 | Use `static final` for repetitive string constants .                                           |
 | gen-18 | Remove unused functions.                                                                       |
 | gen-19 | Avoid console output, use a logger                                                             |
-
-
+| gen-20 | Validate inputs early to avoid unintended consequences.                                        |
+| gen-21 | Embrace dependency injection                                                                   |
 
 
 # Tests
@@ -127,7 +127,6 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 | sec-2  |            | Use a secrets manager.                                                       |
 | sec-3  |            | Do not log secrets.                                                          |
 | sec-4  |            | Always validate public inputs.                                               |
-| sec-5  |            | Validate inputs early.                                                       |
 | sec-6  |            | Do not include secrets in error or exception messages.                       |
 | sec-7  |            | Use well known encryption tools. Don't create your own encryption algorithm. |
 | sec-8  |            | Avoid storing secrets in variables or memory when possible.                  |
@@ -147,13 +146,17 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 
 # Source Control
-| Code  | Description                                                                                     |
-|-------|-------------------------------------------------------------------------------------------------|
-| scm-1 | Only code-owners can merge into ```main``` branches                                             |
-| scm-2 | No direct commits into ```main``` or ```dev``` branches                                         |
-| scm-3 | Use snake-case for branch names                                                                 |
-| scm-4 | Feature additions must pull from ```dev``` and be prefixed with ```feature/name-of-feature```   |
-| scm-5 | Bug fixes must pull from ```dev``` and be prefixed with ```bug/name-of-bug```                   |
-| scm-6 | Hot fixes must pull from ```main``` or ```dev``` and be prefixed with ```hot-fix/name-of-bug``` |
+| Code  | Description                                                                                                     |
+|-------|-----------------------------------------------------------------------------------------------------------------|
+| scm-1 | Only code-owners can merge into ```main``` branches                                                             |
+| scm-2 | No direct commits into ```main``` or ```dev``` branches                                                         |
+| scm-3 | Use snake-case for branch names                                                                                 |
+| scm-4 | Feature additions must pull from ```dev``` and be prefixed with ```feature/name-of-feature```                   |
+| scm-5 | Bug fixes must pull from ```dev``` and be prefixed with ```bug/name-of-bug```                                   |
+| scm-6 | Hot fixes must pull from ```main``` or ```dev``` and be prefixed with ```hot-fix/name-of-bug```                 |
+| scm-7 | Include ticket number/link in commit when available                                                             |
+| scm-8 | Merge into `main` or `dev` requested via Pull Request and must be peer reviewed and passing all required checks |
+| scm-9 | Keep Pull Request small and focused for easy review                                                             |
+
 
 
