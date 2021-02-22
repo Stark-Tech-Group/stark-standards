@@ -78,3 +78,6 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 # Resources
 #include "general/resources/README.md"
+
+# Devops
+#include "general/devops/README.md"
