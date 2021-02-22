@@ -4,7 +4,6 @@
 | sec-2  |            | Use a secrets manager.                                                       |
 | sec-3  |            | Do not log secrets.                                                          |
 | sec-4  |            | Always validate public inputs.                                               |
-| sec-5  |            | Validate inputs early.                                                       |
 | sec-6  |            | Do not include secrets in error or exception messages.                       |
 | sec-7  |            | Use well known encryption tools. Don't create your own encryption algorithm. |
 | sec-8  |            | Avoid storing secrets in variables or memory when possible.                  |

@@ -1,6 +1,6 @@
 | Code   | Description                                                                                    |
 |--------|------------------------------------------------------------------------------------------------|
-| gen-1  | Follow best practices of the language                                                          |
+| gen-1  | Follow best practices of the language.                                                         |
 | gen-2  | camelCase naming for variables.                                                                |
 | gen-3  | Uppercase constants and static.                                                                |
 | gen-4  | Capitalize first word for classes.                                                             |
@@ -19,5 +19,5 @@
 | gen-17 | Use `static final` for repetitive string constants .                                           |
 | gen-18 | Remove unused functions.                                                                       |
 | gen-19 | Avoid console output, use a logger                                                             |
-
-
+| gen-20 | Validate inputs early to avoid unintended consequences.                                        |
+| gen-21 | Embrace dependency injection                                                                   |
