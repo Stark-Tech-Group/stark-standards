@@ -1,6 +1,13 @@
 # stg-standards
 
-``` node .\node_modules\markdown-include\bin\cli.js .\markdown.json ```
+## Why use GitHub
+ - Team approval approach. New standards are done through pull-requests
+ - Easily reference coding standards in other GitHub repositories
+ - Versions and history tracking of standards
+ - Automation of releasing new standards
+
+## Building the Document
+To build the document install ```markdown-include``` and then run ``` node .\node_modules\markdown-include\bin\cli.js .\markdown.json ```.
 
 # Tests
 | Code   | Description                                                              |
@@ -33,32 +40,42 @@
 
 
 # Dependencies
-| Code  | Description                                                    | Comment |
-|-------|----------------------------------------------------------------|---------|
-| dep-1 | Use the latest dependencies.                                   |         |
-| dep-2 | Avoid unsupported or poorly supported dependencies.            |         |
-| dep-3 | Avoid dependencies from foreign nations.                       |         |
-| dep-4 | Keep dependencies in one location.                             |         |
-| dep-5 | Understand dependency licensing.                               |         |
-| dep-6 | Keep test and dev dependencies out of production environments. |         |
+| Code  | Description                                                    |
+|-------|----------------------------------------------------------------|
+| dep-1 | Use the latest dependencies.                                   |
+| dep-2 | Avoid unsupported or poorly supported dependencies.            |
+| dep-3 | Avoid dependencies from foreign nations.                       |
+| dep-4 | Keep dependencies in one location.                             |
+| dep-5 | Understand dependency licensing.                               |
+| dep-6 | Keep test and dev dependencies out of production environments. |
 
 
 
 
 # Design
-| Code  | Description                 | Comment |
-|-------|-----------------------------|---------|
-| des-1 | Design for containerization |         |
-| des-2 | Design for localization     |         |
+| Code  | Description                 |
+|-------|-----------------------------|
+| des-1 | Design for containerization |
+| des-2 | Design for localization     |
 
 
 
 
 # Security
-| Code  | Description                             | Comment |
-|-------|-----------------------------------------|---------|
-| sec-1 | Do not commit secrets to source control |         |
-| sec-2 | Use a secrets manager                   |         |
-| sec-3 | Do not log secrets                      |         |
+| Code  | Description                             |
+|-------|-----------------------------------------|
+| sec-1 | Do not commit secrets to source control |
+| sec-2 | Use a secrets manager                   |
+| sec-3 | Do not log secrets                      |
+
+
+
+
+# Source Control
+| Code  | Description                             |
+|-------|-----------------------------------------|
+| scm-1 | |
+| scm-2 | |
+| scm-3 | |
 
 
