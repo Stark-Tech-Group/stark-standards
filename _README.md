@@ -61,6 +61,9 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 # General
 #include "general/general/README.md"
 
+# Security
+#include "general/security/README.md"
+
 # Tests
 #include "general/tests/README.md"
 
@@ -70,17 +73,14 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 # Design
 #include "general/design/README.md"
 
-# Security
-#include "general/security/README.md"
-
 # Source Control
 #include "general/source-control/README.md"
-
-# Resources
-#include "general/resources/README.md"
 
 # Devops
 #include "general/devops/README.md"
 
 # Datastore
 #include "general/datastore/README.md"
+
+# Resources
+#include "general/resources/README.md"
