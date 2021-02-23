@@ -20,6 +20,7 @@ function calculate(a, b, c) {
 ```
  
 ```javascript
+//embrace:
 function calculate(speed, distance, time) {
     return (speed * distance) * time;
 }
@@ -51,6 +52,7 @@ function isOk(response) {
 ```
 
 ```javascript
+//embrace:
 const OK_RESPONSE_CODE = 1 
 function isOk(response) {
     if ( anyNulls(response, response.get('code') ) return false;
@@ -69,7 +71,7 @@ function isOk(response) {
 Example:
 
 ```javascript
-//ppor:
+//avoid:
 function getUser(username) {
    const allUsers = sql.getRows("SELECT id, username FORM users")
    return allUsers.find( (i) => i.username === username )
@@ -77,7 +79,7 @@ function getUser(username) {
 ```
 
 ```javascript
-//better:
+//embrace:
 function getUser(username) {
    return sql.getRows("SELECT id, username FORM users WHERE username = :username", username)
 }
