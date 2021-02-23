@@ -67,6 +67,7 @@ function isOk(response) {
 Example:
 
 ```javascript
+//bad:
 function getUser(username) {
    const allUsers = sql.getRows("SELECT id, username FORM users")
    return allUsers.filter( (i) => i.username == username ).findFirst()
@@ -74,6 +75,7 @@ function getUser(username) {
 ```
 
 ```javascript
+//better:
 function getUser(username) {
    return sql.getRows("SELECT id, username FORM users WHERE username = :username", username)
 }
