@@ -94,4 +94,5 @@ $(window).on('scroll', _.debounce(doSomething, 200));
   
 </td></tr>
 <tr><td> sec-29 </td><td> Do not store secrets in containers</td></tr>
+<tr><td> sec-30 </td><td> Avoid putting security controls on client side</td></tr>
 </tbody>
