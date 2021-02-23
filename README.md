@@ -1,13 +1,14 @@
-# stg-standards
+# Stark Tech Group 
+## Software Development and Programming Guidance
 
 ## Why use Source Control?
- - Team approval approach. New standards are done through pull-requests
+ - Team approval approach with pull-requests comments and branching
  - Easily reference coding standards in other GitHub repositories
- - Versions and history tracking of standards
- - Automation of releasing new standards
+ - Automation of releases and updates
+ - History and version tracking
 
 ## Building the Document
-To build the document install ```markdown-include``` and then run ``` node .\node_modules\markdown-include\bin\cli.js .\markdown.json ```.
+This document is built automatically using workflow actions and nodejs. Once a change has been approved using a pull-request and merged into ```dev``` a new version will be published. 
 
 
 # Guidance
