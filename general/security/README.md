@@ -28,3 +28,4 @@
 | sec-26 | Document malicious IP addresses in net-sec repository                                      |
 | sec-27 | Limit number of failed access and authentication attempts                                  |
 | sec-28 | Use de-bouncing techniques                                                                 |
+| sec-29 | Do not store secrets in containers                                                         |
