@@ -25,7 +25,17 @@ function getUser(username) {
 </td></tr>
 <tr><td> sec-4  </td><td> Do not commit secrets to source control</td></tr>
 <tr><td> sec-5  </td><td> Use a secrets manager</td></tr>
-<tr><td> sec-6  </td><td> Do not log secrets</td></tr>
+<tr><td> sec-6  </td><td> Do not log secrets
+  
+```javascript
+//avoid:
+function call(url, apiKey) {
+  Logger.info("call with apiKey:" + apiKey)
+  return url.setHeader("auth", apiKey).get(url)
+}
+```
+  
+</td></tr>
 <tr><td> sec-7  </td><td> Treat Personal Identifiable Information (PII) as secrets</td></tr>
 <tr><td> sec-8  </td><td> Always assume inputs will be malicious</td></tr>
 <tr><td> sec-9  </td><td> Always assume file uploads will be malicious in content, size and type</td></tr>
