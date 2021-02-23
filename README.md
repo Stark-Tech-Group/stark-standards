@@ -103,6 +103,7 @@ const prime = Lists.of(2, 3, 5)
 Example:
 
 ```javascript
+//bad:
 function isOk(response) {
     if ( anyNulls(response, response.get('code') ) return false;
     return response.get('code') === 1 // anonymous constant
@@ -110,6 +111,7 @@ function isOk(response) {
 ```
 
 ```javascript
+//better
 const OK_RESPONSE_CODE = 1 
 function isOk(response) {
     if ( anyNulls(response, response.get('code') ) return false;
