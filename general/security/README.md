@@ -14,6 +14,7 @@
 | sec-13 |            | Restrict file upload types.                                                  |
 | sec-14 |            | Limit the size a log file can expand to.                                     |
 | sec-15 |            | Limit the number of log files created.                                       |
+| sec-16 |            | Encrypt all sensitive data ().                                       |
 | sec-16 | ```html``` | Use SSL\TLS on all traffic when possible.                                    |
 | sec-17 | ```html``` | Encrypt cookies.                                                             |
 | sec-18 | ```html``` | Encrypt html local storage.                                                  |
