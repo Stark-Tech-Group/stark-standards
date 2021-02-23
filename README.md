@@ -298,44 +298,31 @@ function call(url, apiKey) {
 <tr><td> sec-25 </td><td> Document trusted IP address in net-sec repository</td></tr>
 <tr><td> sec-26 </td><td> Document malicious IP addresses in net-sec repository</td></tr>
 <tr><td> sec-27 </td><td> Limit number of failed access and authentication attempts</td></tr>
-<tr><td> sec-28 </td><td> Throttle login to help prevent brute force
+<tr><td> sec-28 </td><td> Throttle login to help prevent brute force</td></tr>
+<tr><td> sec-29 </td><td> Do not store secrets in containers</td></tr>
+<tr><td> sec-30 </td><td> Avoid putting security controls on client side
 
 ```javascript
 //avoid:
+<input class="button" disabled="canDelete()" onclick="delete(e)"> Delete </input>
+...
 
-// client-side
-function login(creds) {
-  return authService.auth(creds)  
-}
-
-// server-side:
-function auth(creds) {
-  return doAuth(creds)
-}
-
+//client-side
+func canDelete() { return user.hasRole("DELETE"); }
+func delete(e) { db.delete(e); }
 ```
 
 ```javascript
 //embrace:
+<input class="button" disabled="canDelete()" onclick="delete(e)"> Delete </input>
 
-// client-side
-function login(creds) {
-  return authService.auth(creds)  
-}
-
-// server-side:
-function auth(creds) {
-  wait(1000)
-  return doAuth(creds)
-}
+//client-side
+func canDelete() { return user.hasRole("DELETE"); }
+func delete(e) { db.delete(user, e); /* server checks permissions, not client */ }
 
 ```
-
-$(window).on('scroll', _.debounce(doSomething, 200));
   
 </td></tr>
-<tr><td> sec-29 </td><td> Do not store secrets in containers</td></tr>
-<tr><td> sec-30 </td><td> Avoid putting security controls on client side</td></tr>
 </tbody>
 
 
