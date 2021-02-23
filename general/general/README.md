@@ -36,8 +36,7 @@ const book = new Book("Design Patterns Explained", "Alan Shalloway",
  
 ```javascript
 //embrace:
-const book = BookBuilder
-                .setTitle("Design Patterns Explained")
+const book = new BookBuilder.setTitle("Design Patterns Explained")
                 .setAuthor("Alan Shalloway")
                 .setISBN("978-0321247148")
                 .setRating(4.9)
