@@ -91,14 +91,14 @@ function calculate(speed, distance, time) {
     
 ```javascript
 //avoid:
-const book = new Book("Design Patterns Explained", "Alan Shalloway", "978-0321247148", 4.9, 480, "October 12, 2004", "English")
+const book = new Book("Design Patterns Explained", "Alan Shalloway", 
+                        "978-0321247148", 4.9, 480, "October 12, 2004", "English")
 ```
  
 ```javascript
 //embrace:
-const book = BookBuilder
-                .setTitle("Design Patterns Explained")
-                .setAuthor("Alan Shalloway""
+const book = new BookBuilder.setTitle("Design Patterns Explained")
+                .setAuthor("Alan Shalloway")
                 .setISBN("978-0321247148")
                 .setRating(4.9)
                 .setPageCount(480)
