@@ -12,7 +12,7 @@
     <tr><td> gen-7  </td>
       <td> Avoid redundant labeling. <br/> 
         <pre>
-        book.getBookPage(1) //redundant  
+        book.getBookPage(1) //redundant
         book.getPage(1) //no-redundant
         </pre>
       </td>
