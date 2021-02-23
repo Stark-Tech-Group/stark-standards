@@ -1,5 +1,4 @@
-# Stark Tech Group 
-## Software Development and Programming Guidance
+# Software Development and Programming Guidance
 
 ## Why use Source Control?
  - Team approval approach with pull-requests comments and branching
@@ -8,7 +7,7 @@
  - History and version tracking
 
 ## Building the Document
-This document is built automatically using workflow actions and nodejs. Once a change has been approved using a pull-request and merged into ```dev``` a new version will be published. 
+This document is built automatically using workflow actions and nodejs. Once a change has been approved using a pull-request and merged into ```dev``` a new version will be published.
 
 
 # Guidance
