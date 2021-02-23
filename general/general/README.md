@@ -13,6 +13,7 @@
 <tr><td> gen-8  </td><td> Use meaning full names 
 
 ```javascript
+//avoid:
 function calculate(a, b, c) {
     return (a * b) * c;
 }
@@ -42,7 +43,7 @@ const prime = Lists.of(2, 3, 5)
 Example:
 
 ```javascript
-//poor:
+//avoid:
 function isOk(response) {
     if ( anyNulls(response, response.get('code') ) return false;
     return response.get('code') === 1 // anonymous constant
@@ -50,7 +51,6 @@ function isOk(response) {
 ```
 
 ```javascript
-//better:
 const OK_RESPONSE_CODE = 1 
 function isOk(response) {
     if ( anyNulls(response, response.get('code') ) return false;
