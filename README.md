@@ -156,7 +156,42 @@ function isOk(response) {
 <tr><td> gen-17 </td><td> Use `static final` for repetitive string constants</td></tr>
 <tr><td> gen-18 </td><td> Remove unused functions</td></tr>
 <tr><td> gen-19 </td><td> Avoid console output, use a logger</td></tr>
-<tr><td> gen-20 </td><td> Validate inputs early to avoid unintended consequences</td></tr>
+<tr><td> gen-20 </td><td> Validate inputs early to avoid unintended consequences
+ 
+ 
+```javascript
+//avoid:
+function search(user, query, limit) {
+   if ( len(query) == 0 ) throw new Error('empty query')
+   if ( limit > MAX_RESULT ) throw new Error('limit too large')
+   
+   const results = searchService.query(query, limit)
+   
+   if ( user == null ) throw new Error('no user provided')
+   else results.set('user', user)
+  
+   return results
+}
+```
+
+```javascript
+//embrace:
+function search(user, query, limit) {
+   if ( len(query) == 0 ) throw new Error('empty query')
+   if ( limit > MAX_RESULT ) throw new Error('limit too large')
+   if ( user == null ) throw new Error('no user provided')
+   
+   const results = searchService.query(query, limit)   
+   results.set('user', user)
+  
+   return results
+}
+```
+
+ 
+ 
+ 
+ </td></tr>
 <tr><td> gen-21 </td><td> Embrace dependency injection when available</td></tr>
 <tr><td> gen-22 </td><td> Favor iterators when dealing with large collections</td></tr>
 <tr><td> gen-23 </td><td> Avoid loading unnecessary items into collections for later filtering <br/>
