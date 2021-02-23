@@ -101,7 +101,6 @@ function isOk(response) {
 ```javascript
 //avoid:
 function search(user, query, limit) {
-   if ( len(query) == 0 ) throw new Error('empty query')
    if ( limit > MAX_RESULT ) throw new Error('limit too large')
    
    const results = searchService.query(query, limit)
@@ -116,7 +115,6 @@ function search(user, query, limit) {
 ```javascript
 //embrace:
 function search(user, query, limit) {
-   if ( len(query) == 0 ) throw new Error('empty query')
    if ( limit > MAX_RESULT ) throw new Error('limit too large')
    if ( user == null ) throw new Error('no user provided')
    
