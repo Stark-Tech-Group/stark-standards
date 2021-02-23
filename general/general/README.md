@@ -65,10 +65,15 @@ function isOk(response) {
 <tr><td> gen-23 </td><td> Avoid loading unnecessary items into collections for later filtering 
 
 ```javascript
-//loads unnecessary users
 function getUser(username) {
    const allUsers = sql.getRows("SELECT id, username FORM users")
    return allUsers.filter( (i) => i.username == username ).findFirst()
+}
+```
+
+```javascript
+function getUser(username) {
+   return sql.getRows("SELECT id, username FORM users WHERE username = :username", username)
 }
 ```
 
