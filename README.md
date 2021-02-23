@@ -70,16 +70,49 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 <tr><td> gen-4  </td><td> Capitalize first word for classes</td></tr>
 <tr><td> gen-5  </td><td> Avoid global variables, use the least exposure possible</td></tr>
 <tr><td> gen-6  </td><td> Avoid public variables for classes. Enforce the idea of encapsulation with getters and setter</td></tr>
-<tr><td> gen-7  </td><td> Avoid redundant labeling. <br/> ` book.getBookPage(1) //redundant ` vs. `book.getPage(1)`</td></tr>
-<tr><td> gen-8  </td><td> Use meaning full names.  <br/> ` var returnVal = 2; ` vs. `var zoomLevel = 2;`</td></tr>
+<tr><td> gen-7  </td><td> Avoid redundant labeling <br/> ` book.getBookPage(1) //redundant ` vs. `book.getPage(1)`</td></tr>
+<tr><td> gen-8  </td><td> Use meaning full names 
+
+```javascript
+//usless names
+function calculateSpeed(a, b, c) {
+    const retval = (a + b) * c;
+    return retval
+}
+```
+
 <tr><td> gen-9  </td><td> Avoid constructors with more than 8 arguments, consider a builder or data object</td></tr>
-<tr><td> gen-10 </td><td> Consider static factory methods instead of constructors</td></tr>
+<tr><td> gen-10 </td><td> Consider static factory methods instead of constructors
+
+```javascript
+const location = Location.from("Buffalo", "NY")
+const prime = Lists.of(2, 3, 5)
+```
+
+</td></tr>
 <tr><td> gen-11 </td><td> Enforce singleton property with a private constructor or an enum type</td></tr>
 <tr><td> gen-12 </td><td> Don't comment out code, just remove it</td></tr>
 <tr><td> gen-13 </td><td> Obey the general contract when overriding equals and hashCode</td></tr>
 <tr><td> gen-14 </td><td> Minimize mutability, use `final` or `const` judiciously</td></tr>
 <tr><td> gen-15 </td><td> Design for inheritance or prohibit it (`final` or `sealed` class)</td></tr>
-<tr><td> gen-16 </td><td> Use enums instead of int constants</td></tr>
+<tr><td> gen-16 </td><td> Replace anonymous constants with descriptive constants
+
+```javascript
+function isOk(response) {
+    if ( anyNulls(response, response.get('code') ) return false;
+    return response.get('code') === 1 // anonymous constant
+}
+```
+vs.
+```javascript
+const OK_RESPONSE_CODE = 1 
+function isOk(response) {
+    if ( anyNulls(response, response.get('code') ) return false;
+    return response.get('code') === OK_RESPONSE_CODE // descriptive constant
+}
+```
+
+</td></tr>
 <tr><td> gen-17 </td><td> Use `static final` for repetitive string constants</td></tr>
 <tr><td> gen-18 </td><td> Remove unused functions</td></tr>
 <tr><td> gen-19 </td><td> Avoid console output, use a logger</td></tr>
@@ -90,7 +123,7 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 ```javascript
 //loads unnecessary users
-function getUser(username) {|
+function getUser(username) {
    const allUsers = sql.getRows("SELECT id, username FORM users")
    return allUsers.filter( (i) => i.username == username ).findFirst()
 }
