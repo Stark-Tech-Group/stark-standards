@@ -12,7 +12,7 @@
 ```javascript
 //avoid:
 function getUser(username) {
-   return sql.getRows("SELECT id, username FORM users WHERE = '" + username + '")
+   return sql.getRows("SELECT id, username FORM users WHERE = '" + username + "'")
 }
 ```
 
