@@ -26,7 +26,27 @@ function calculate(speed, distance, time) {
 }
 ```
 
-<tr><td> gen-9  </td><td> Avoid constructors with more than 8 arguments, consider a builder or data object</td></tr>
+<tr><td> gen-9  </td><td> Avoid constructors with more than 4 arguments, consider a builder or data object
+    
+```javascript
+//avoid:
+const book = new Book("Design Patterns Explained", "Alan Shalloway", "978-0321247148", 4.9, 480, "October 12, 2004", "English")
+```
+ 
+```javascript
+//embrace:
+const book = BookBuilder
+                .setTitle("Design Patterns Explained")
+                .setAuthor("Alan Shalloway""
+                .setISBN("978-0321247148")
+                .setRating(4.9)
+                .setPageCount(480)
+                .setPublishDate("October 12, 2004")
+                .setLanguange("English")
+                .build()
+```
+    
+</td></tr>
 <tr><td> gen-10 </td><td> Consider static factory methods instead of constructors
 
 ```javascript
@@ -41,7 +61,6 @@ const prime = Lists.of(2, 3, 5)
 <tr><td> gen-14 </td><td> Minimize mutability, use `final` or `const` judiciously</td></tr>
 <tr><td> gen-15 </td><td> Design for inheritance or prohibit it (`final` or `sealed` class)</td></tr>
 <tr><td> gen-16 </td><td> Replace anonymous constants with descriptive constants <br/>
-Example:
 
 ```javascript
 //avoid:
@@ -68,7 +87,6 @@ function isOk(response) {
 <tr><td> gen-21 </td><td> Embrace dependency injection when available</td></tr>
 <tr><td> gen-22 </td><td> Favor iterators when dealing with large collections</td></tr>
 <tr><td> gen-23 </td><td> Avoid loading unnecessary items into collections for later filtering <br/>
-Example:
 
 ```javascript
 //avoid:
