@@ -30,7 +30,8 @@ function calculate(speed, distance, time) {
     
 ```javascript
 //avoid:
-const book = new Book("Design Patterns Explained", "Alan Shalloway", "978-0321247148", 4.9, 480, "October 12, 2004", "English")
+const book = new Book("Design Patterns Explained", "Alan Shalloway", 
+                        "978-0321247148", 4.9, 480, "October 12, 2004", "English")
 ```
  
 ```javascript
