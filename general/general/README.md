@@ -48,8 +48,7 @@ function isOk(response) {
     return response.get('code') === 1 // anonymous constant
 }
 ```
-
-
+&nbsp;
 ```javascript
 //better
 const OK_RESPONSE_CODE = 1 
