@@ -38,7 +38,7 @@ const book = new Book("Design Patterns Explained", "Alan Shalloway",
 //embrace:
 const book = BookBuilder
                 .setTitle("Design Patterns Explained")
-                .setAuthor("Alan Shalloway""
+                .setAuthor("Alan Shalloway")
                 .setISBN("978-0321247148")
                 .setRating(4.9)
                 .setPageCount(480)
