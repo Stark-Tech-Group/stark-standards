@@ -49,6 +49,7 @@ function isOk(response) {
 }
 ```
 
+
 ```javascript
 //better
 const OK_RESPONSE_CODE = 1 
