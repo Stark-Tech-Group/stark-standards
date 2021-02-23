@@ -70,7 +70,15 @@ Code-Owners may enforce special or specific requirements on a repository at any 
     <tr><td> gen-4  </td><td> Capitalize first word for classes </td></tr>
     <tr><td> gen-5  </td><td> Avoid global variables, use the least exposure possible </td></tr>
     <tr><td> gen-6  </td><td> Avoid public variables for classes and enforce the idea of encapsulation with getters and setter </td></tr>
-    <tr><td> gen-7  </td><td> Avoid redundant labeling. <br/> ` book.getBookPage(1) //redundant ` vs. `book.getPage(1)` </td></tr>
+    <tr><td> gen-7  </td>
+      <td> Avoid redundant labeling. <br/> 
+        ``` 
+        book.getBookPage(1) //redundant  
+        //vs. 
+        book.getPage(1)
+        ``` 
+      </td>
+    </tr>
     <tr><td> gen-8  </td><td> Use meaning full names.  <br/> ` var returnVal = 2; ` vs. `var zoomLevel = 2;` </td></tr>
     <tr><td> gen-9  </td><td> Avoid constructors with more than 8 arguments, consider a builder or data object </td></tr>
     <tr><td> gen-10 </td><td> Consider static factory methods instead of constructors </td></tr>
