@@ -13,10 +13,14 @@
 <tr><td> gen-8  </td><td> Use meaning full names 
 
 ```javascript
-//usless names
-function calculateSpeed(a, b, c) {
-    const retval = (a + b) * c;
-    return retval
+function calculate(a, b, c) {
+    return (a * b) * c;
+}
+```
+vs.
+```javascript
+function calculate(speed, distance, time) {
+    return (speed * distance) * time;
 }
 ```
 
