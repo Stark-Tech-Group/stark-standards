@@ -234,6 +234,30 @@ function getUser(username) {
 ```
 
 </td></tr>
+<tr><td> gen-24 </td><td> Don't ignore exceptions <br/>
+
+```javascript
+//avoid:
+function print(a) {
+   try { return Printer.print(a) } 
+   catch (e) { 
+    /* something bad happend */ 
+    return; 
+   }
+}
+```
+
+```javascript
+//embrace:
+function print(a) {
+   try { return Printer.print(a) } 
+   catch (e) { 
+    handleError(e);
+   }
+}
+```
+
+</td></tr>
 </tbody>
 </table>
 
