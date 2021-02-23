@@ -13,14 +13,12 @@
 <tr><td> gen-8  </td><td> Use meaning full names 
 
 ```javascript
-//poor:
 function calculate(a, b, c) {
     return (a * b) * c;
 }
 ```
-
+ 
 ```javascript
-//better:
 function calculate(speed, distance, time) {
     return (speed * distance) * time;
 }
