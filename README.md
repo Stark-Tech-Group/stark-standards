@@ -248,7 +248,22 @@ function getUser(username) {
   <tbody>
     <tr><td> sec-1  </td><td> Do not allow cross-site scripting (XSS) vulnerabilities</td></tr>
 <tr><td> sec-2  </td><td> Do not allow cross-site request forgery (CSRF) vulnerabilities</td></tr>
-<tr><td> sec-3  </td><td> Do not allow sql injection vulnerabilities, favor prepared statements and named variables</td></tr>
+<tr><td> sec-3  </td><td> Do not allow sql injection vulnerabilities, favor prepared statements and named variables
+
+```javascript
+//avoid:
+function getUser(username) {
+   return sql.getRows("SELECT id, username FORM users WHERE = '" + username + '")
+}
+```
+
+```javascript
+//embrace:
+function getUser(username) {
+   return sql.getRows("SELECT id, username FORM users WHERE username = :username", {'username':username})
+}
+```
+</td></tr>
 <tr><td> sec-4  </td><td> Do not commit secrets to source control</td></tr>
 <tr><td> sec-5  </td><td> Use a secrets manager</td></tr>
 <tr><td> sec-6  </td><td> Do not log secrets</td></tr>
