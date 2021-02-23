@@ -173,7 +173,7 @@ function getUser(username) {
 ```
 
 </td></tr>
-<tr><td> gen-24 </td><td> Don't ignore exception <br/>
+<tr><td> gen-24 </td><td> Don't ignore exceptions <br/>
 
 ```javascript
 //avoid:
