@@ -83,3 +83,4 @@ func delete(e) { db.delete(user, e); /* server checks permissions, not client */
   
 </td></tr>
 </tbody>
+</table>
