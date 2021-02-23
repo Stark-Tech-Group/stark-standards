@@ -72,11 +72,10 @@ Code-Owners may enforce special or specific requirements on a repository at any 
     <tr><td> gen-6  </td><td> Avoid public variables for classes and enforce the idea of encapsulation with getters and setter </td></tr>
     <tr><td> gen-7  </td>
       <td> Avoid redundant labeling. <br/> 
-        ``` 
+        <pre>
         book.getBookPage(1) //redundant  
-        //vs. 
-        book.getPage(1)
-        ``` 
+        book.getPage(1) //no-redundant
+        </pre>
       </td>
     </tr>
     <tr><td> gen-8  </td><td> Use meaning full names.  <br/> ` var returnVal = 2; ` vs. `var zoomLevel = 2;` </td></tr>
