@@ -74,12 +74,14 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 <tr><td> gen-8  </td><td> Use meaning full names 
 
 ```javascript
+//poor:
 function calculate(a, b, c) {
     return (a * b) * c;
 }
 ```
 
 ```javascript
+//better:
 function calculate(speed, distance, time) {
     return (speed * distance) * time;
 }
@@ -103,16 +105,15 @@ const prime = Lists.of(2, 3, 5)
 Example:
 
 ```javascript
-//bad:
+//poor:
 function isOk(response) {
     if ( anyNulls(response, response.get('code') ) return false;
     return response.get('code') === 1 // anonymous constant
 }
 ```
 
-
 ```javascript
-//better
+//better:
 const OK_RESPONSE_CODE = 1 
 function isOk(response) {
     if ( anyNulls(response, response.get('code') ) return false;
@@ -131,10 +132,10 @@ function isOk(response) {
 Example:
 
 ```javascript
-//bad:
+//ppor:
 function getUser(username) {
    const allUsers = sql.getRows("SELECT id, username FORM users")
-   return allUsers.filter( (i) => i.username == username ).findFirst()
+   return allUsers.find( (i) => i.username === username )
 }
 ```
 
