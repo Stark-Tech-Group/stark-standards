@@ -155,7 +155,31 @@ function isOk(response) {
 </td></tr>
 <tr><td> gen-17 </td><td> Use `static final` for repetitive string constants</td></tr>
 <tr><td> gen-18 </td><td> Remove unused functions</td></tr>
-<tr><td> gen-19 </td><td> Avoid console output, use a logger</td></tr>
+<tr><td> gen-19 </td><td> Avoid console output, use a logger
+ 
+```javascript
+//avoid:
+function calculate(speed, distance, time) {
+    console.log("calling calculate")
+    /* debugger
+    console.log("speed", speed)
+    console.log("distance", distance)
+    console.log("time", time)
+    */
+    // console.log("done")
+    return (speed * distance) * time;
+}
+```
+ 
+```javascript
+//embrace:
+function calculate(speed, distance, time) {
+    Logger.debug("calling calculate speed:%s, distance:%s, time:%s", speed, distance, time)
+    return (speed * distance) * time;
+}
+``` 
+ 
+</td></tr>
 <tr><td> gen-20 </td><td> Validate inputs early to avoid unintended consequences
  
  
