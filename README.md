@@ -74,14 +74,12 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 <tr><td> gen-8  </td><td> Use meaning full names 
 
 ```javascript
-//poor
 function calculate(a, b, c) {
     return (a * b) * c;
 }
 ```
 
 ```javascript
-//better
 function calculate(speed, distance, time) {
     return (speed * distance) * time;
 }
@@ -101,7 +99,8 @@ const prime = Lists.of(2, 3, 5)
 <tr><td> gen-13 </td><td> Obey the general contract when overriding equals and hashCode</td></tr>
 <tr><td> gen-14 </td><td> Minimize mutability, use `final` or `const` judiciously</td></tr>
 <tr><td> gen-15 </td><td> Design for inheritance or prohibit it (`final` or `sealed` class)</td></tr>
-<tr><td> gen-16 </td><td> Replace anonymous constants with descriptive constants
+<tr><td> gen-16 </td><td> Replace anonymous constants with descriptive constants <br/>
+Example:
 
 ```javascript
 function isOk(response) {
@@ -125,7 +124,8 @@ function isOk(response) {
 <tr><td> gen-20 </td><td> Validate inputs early to avoid unintended consequences</td></tr>
 <tr><td> gen-21 </td><td> Embrace dependency injection when available</td></tr>
 <tr><td> gen-22 </td><td> Favor iterators when dealing with large collections</td></tr>
-<tr><td> gen-23 </td><td> Avoid loading unnecessary items into collections for later filtering 
+<tr><td> gen-23 </td><td> Avoid loading unnecessary items into collections for later filtering <br/>
+Example:
 
 ```javascript
 function getUser(username) {
