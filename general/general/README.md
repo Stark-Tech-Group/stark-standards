@@ -9,7 +9,19 @@
 <tr><td> gen-4  </td><td> Capitalize first word for classes</td></tr>
 <tr><td> gen-5  </td><td> Avoid global variables, use the least exposure possible</td></tr>
 <tr><td> gen-6  </td><td> Avoid public variables for classes. Enforce the idea of encapsulation with getters and setter</td></tr>
-<tr><td> gen-7  </td><td> Avoid redundant labeling <br/> ` book.getBookPage(1) //redundant ` vs. `book.getPage(1)`</td></tr>
+<tr><td> gen-7  </td><td> Avoid redundant labeling
+
+```javascript
+//avoid:
+const bookPage = book.getBookPage(1)
+```
+ 
+```javascript
+//embrace:
+const page = book.getPage(1)
+```
+
+</td></tr>
 <tr><td> gen-8  </td><td> Use meaning full names 
 
 ```javascript
