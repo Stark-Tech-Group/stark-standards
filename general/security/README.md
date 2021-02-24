@@ -82,5 +82,6 @@ func delete(e) { db.delete(user, e); /* server checks permissions, not client */
 ```
   
 </td></tr>
+<td> sec-31 </td><td> Always prefer whitelisting over blacklisting</td></tr>
 </tbody>
 </table>
