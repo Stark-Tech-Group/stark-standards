@@ -197,6 +197,6 @@ function print(a) {
 ```
 
 </td></tr>
-<tr><td> gen-23 </td><td> Limit number of conditionals in one function to no more than 15 (if and switch)</td></tr>
+<tr><td> gen-23 </td><td> Limit number of conditionals in one function to no more than 10 (if and switch)</td></tr>
 </tbody>
 </table>
