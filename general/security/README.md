@@ -83,5 +83,33 @@ func delete(e) { db.delete(user, e); /* server checks permissions, not client */
   
 </td></tr>
 <td> sec-31 </td><td> Always prefer whitelisting over blacklisting</td></tr>
+
+<tr><td> sec-32  </td><td> Use id objects and typing to enforce your intention
+
+```javascript
+//avoid:
+function getUserById(id) {
+   return db.get('user', id)
+}
+```
+
+```javascript
+//embrace:
+
+class PersonId {
+  private constructor( private readonly id: number ) { }
+  getId() { return this.id; }
+  public static of(id: number): PersonId {
+    if (id < 0) { return null; }
+    return new PersonId(id);
+  }
+}
+
+function getUserById(personId PersonId) {
+   return db.get('user', personId.getId() )
+}
+```
+</td></tr>
+
 </tbody>
 </table>
