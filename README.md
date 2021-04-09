@@ -482,6 +482,7 @@ function getUserById(personId PersonId) {
 | Agile               | Basics of Scrum, Agile and Project Delivery             | [udemy](https://www.udemy.com/course/scrum-methodology/)                                           |
 | NodeJs              | Introduction to TypeScript                              | [udemy](https://www.udemy.com/course/typescript/)                                                  |
 | Docker/Kubernetes   | Docker and Kubernetes: The Complete Guide               | [udemy](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/)                    |
+| Security            | Github Signed Commits                                   | [Gen gpg key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key) <br> [Add To Git](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account) <br> [Signing](https://docs.github.com/en/github/authenticating-to-github/signing-commits)|
 
 
 ### Tools 
@@ -501,6 +502,9 @@ The following tools are available to Stark Tech Group employees for software dev
  - Visual Studio Code
  - Sql Server Management Studio
  - Postman
+ - WSL
+ - pageant
+ - gpg
 
 
 
