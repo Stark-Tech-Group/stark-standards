@@ -57,13 +57,13 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 <tr><th> Code </th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td> gen-1  </td><td> Follow best practices of the language</td></tr>
-<tr><td> gen-2  </td><td> camelCase naming for variables</td></tr>
-<tr><td> gen-3  </td><td> Uppercase constants and static</td></tr>
-<tr><td> gen-4  </td><td> Capitalize first word for classes</td></tr>
-<tr><td> gen-5  </td><td> Avoid global variables, use the least exposure possible</td></tr>
-<tr><td> gen-6  </td><td> Avoid public variables for classes. Enforce the idea of encapsulation with getters and setter</td></tr>
-<tr><td> gen-7  </td><td> Avoid redundant labeling
+<tr><td> g1  </td><td> Follow best practices of the language</td></tr>
+<tr><td> g2  </td><td> camelCase naming for variables</td></tr>
+<tr><td> g3  </td><td> Uppercase constants and static</td></tr>
+<tr><td> g4  </td><td> Capitalize first word for classes</td></tr>
+<tr><td> g5  </td><td> Avoid global variables, use the least exposure possible</td></tr>
+<tr><td> g6  </td><td> Avoid public variables for classes. Enforce the idea of encapsulation with getters and setter</td></tr>
+<tr><td> g7  </td><td> Avoid redundant labeling
 
 ```javascript
 //avoid:
@@ -76,7 +76,7 @@ const page = book.getPage(1)
 ```
 
 </td></tr>
-<tr><td> gen-8  </td><td> Use meaning full names 
+<tr><td> g8  </td><td> Use meaning full names 
 
 ```javascript
 //avoid:
@@ -92,7 +92,7 @@ function calculate(speed, distance, time) {
 }
 ```
 
-<tr><td> gen-9  </td><td> Avoid constructors with more than 4 arguments, consider a builder or data object
+<tr><td> g9  </td><td> Avoid constructors with more than 4 arguments, consider a builder or data object
     
 ```javascript
 //avoid:
@@ -113,7 +113,7 @@ const book = new BookBuilder.setTitle("Design Patterns Explained")
 ```
     
 </td></tr>
-<tr><td> gen-10 </td><td> Consider static factory methods instead of constructors
+<tr><td> g10 </td><td> Consider static factory methods instead of constructors
 
 ```javascript
 const location = Location.from("Buffalo", "NY")
@@ -121,12 +121,12 @@ const prime = Lists.of(2, 3, 5)
 ```
 
 </td></tr>
-<tr><td> gen-11 </td><td> Enforce singleton property with a private constructor or an enum type</td></tr>
-<tr><td> gen-12 </td><td> Don't comment out code, just remove it</td></tr>
-<tr><td> gen-13 </td><td> Obey the general contract when overriding equals and hashCode</td></tr>
-<tr><td> gen-14 </td><td> Minimize mutability, use `final` or `const` judiciously</td></tr>
-<tr><td> gen-15 </td><td> Design for inheritance or prohibit it (`final` or `sealed` class)</td></tr>
-<tr><td> gen-16 </td><td> Replace anonymous constants with descriptive constants <br/>
+<tr><td> g11 </td><td> Enforce singleton property with a private constructor or an enum type</td></tr>
+<tr><td> g12 </td><td> Don't comment out code, just remove it</td></tr>
+<tr><td> g13 </td><td> Obey the general contract when overriding equals and hashCode</td></tr>
+<tr><td> g14 </td><td> Minimize mutability, use `final` or `const` judiciously</td></tr>
+<tr><td> g15 </td><td> Design for inheritance or prohibit it (`final` or `sealed` class)</td></tr>
+<tr><td> g16 </td><td> Replace anonymous constants with descriptive constants <br/>
 
 ```javascript
 //avoid:
@@ -146,9 +146,9 @@ function isOk(response) {
 ```
 
 </td></tr>
-<tr><td> gen-17 </td><td> Use `static final` for repetitive string constants</td></tr>
-<tr><td> gen-18 </td><td> Remove unused functions</td></tr>
-<tr><td> gen-19 </td><td> Avoid console output, use a logger
+<tr><td> g17 </td><td> Use `static final` for repetitive string constants</td></tr>
+<tr><td> g18 </td><td> Remove unused functions</td></tr>
+<tr><td> g19 </td><td> Avoid console output, use a logger
  
 ```javascript
 //avoid:
@@ -173,7 +173,7 @@ function calculate(speed, distance, time) {
 ``` 
  
 </td></tr>
-<tr><td> gen-20 </td><td> Validate inputs early to avoid unintended consequences
+<tr><td> g20 </td><td> Validate inputs early to avoid unintended consequences
  
  
 ```javascript
@@ -207,9 +207,9 @@ function search(user, query, limit) {
  
  
  </td></tr>
-<tr><td> gen-21 </td><td> Embrace dependency injection when available</td></tr>
-<tr><td> gen-22 </td><td> Favor iterators when dealing with large collections</td></tr>
-<tr><td> gen-23 </td><td> Avoid loading unnecessary items into collections for later filtering <br/>
+<tr><td> g21 </td><td> Embrace dependency injection when available</td></tr>
+<tr><td> g22 </td><td> Favor iterators when dealing with large collections</td></tr>
+<tr><td> g23 </td><td> Avoid loading unnecessary items into collections for later filtering <br/>
 
 ```javascript
 //avoid:
@@ -227,7 +227,7 @@ function getUser(username) {
 ```
 
 </td></tr>
-<tr><td> gen-24 </td><td> Don't ignore exceptions <br/>
+<tr><td> g24 </td><td> Don't ignore exceptions <br/>
 
 ```javascript
 //avoid:
@@ -251,8 +251,8 @@ function print(a) {
 ```
 
 </td></tr>
-<tr><td> gen-23 </td><td> Limit number of conditionals in one function to no more than 10 (if and switch)</td></tr>
-<tr><td> gen-24 </td><td> Store timestamps as UTC </td></tr>
+<tr><td> g23 </td><td> Limit number of conditionals in one function to no more than 10 (if and switch)</td></tr>
+<tr><td> g24 </td><td> Store timestamps as UTC </td></tr>
 </tbody>
 </table>
 
