@@ -1,14 +1,7 @@
-# Software Development and Programming Guidance
 
-## Why use Source Control?
- - Team approval approach with pull-requests comments and branching
- - Easily reference coding standards in other GitHub repositories
- - Automation of releases and updates
- - History and version tracking
+<img src="https://starktechgroup.com/wp-content/uploads/2020/03/Stark-Logo_4c_white.png" alt="alt text" width="250" >
 
-## Building the Document
-This document is built automatically using workflow actions and nodejs. Once a change has been approved using a pull-request and merged into ```dev``` a new version will be published.
-
+# Software Development & Code Guidance
 
 # Guidance
 Software development standards and best practices change as the industry develops new technology, discovers new vulnerabilities, and finds better approaches to solving complex problems. Creating standards around an ever-changing world is a task that requires frequent maintenance and communication.
@@ -87,3 +80,9 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 
 # Additional Guidance & Resources
 #include "general/code-smells/README.md"
+
+(End of Guide)
+
+## Building the Document
+This document is built automatically using workflow actions and nodejs. Once a change has been approved using a pull-request and merged into ```dev``` a new version will be published.
+
