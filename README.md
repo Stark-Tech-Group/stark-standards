@@ -1,14 +1,7 @@
-# Software Development and Programming Guidance
 
-## Why use Source Control?
- - Team approval approach with pull-requests comments and branching
- - Easily reference coding standards in other GitHub repositories
- - Automation of releases and updates
- - History and version tracking
+<img src="https://starktechgroup.com/wp-content/uploads/2020/03/Stark-Logo_4c_white.png" alt="alt text" width="250" >
 
-## Building the Document
-This document is built automatically using workflow actions and nodejs. Once a change has been approved using a pull-request and merged into ```dev``` a new version will be published.
-
+# Software Development & Code Guidance
 
 # Guidance
 Software development standards and best practices change as the industry develops new technology, discovers new vulnerabilities, and finds better approaches to solving complex problems. Creating standards around an ever-changing world is a task that requires frequent maintenance and communication.
@@ -545,4 +538,10 @@ For more information regarding code smell you may refer to: https://en.wikipedia
 6.	**Excessive comments**: a class, function or method has irrelevant or trivial comments. A comment on an attribute setter/getter is a good example.
 7.	**God Objects**: a class that has lots of responsibilities and is low cohesive.
 8.	**Excessively long line of code (or God Line)**: A line of code which is too long, making the code difficult to read, understand, debug, refactor, or even identify possibilities of software reuse. Example
+
+
+(End of Guide)
+
+## Building the Document
+This document is built automatically using workflow actions and nodejs. Once a change has been approved using a pull-request and merged into ```dev``` a new version will be published.
 
