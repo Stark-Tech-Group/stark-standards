@@ -199,5 +199,6 @@ function print(a) {
 </td></tr>
 <tr><td> g23 </td><td> Limit number of conditionals in one function to no more than 10 (if and switch)</td></tr>
 <tr><td> g24 </td><td> Store timestamps as UTC </td></tr>
+<tr><td> g25 </td><td> A source code repository should have at least two code-owners </td></tr>
 </tbody>
 </table>
