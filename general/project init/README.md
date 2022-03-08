@@ -1,0 +1,14 @@
+## Initial Project Setup - Microservice
+|                       | Description                                                                                                                                                                                   |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Repo Creation         | Follow [Repo Template](https://controlfreak.atlassian.net/browse/JT-85)                                                                                                                       |
+| Live/Ready Endpoints  | Each project requires a /live, /startup/, and /ready endpoints to support [Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) |
+| Testing               | Basic testing providing > %50 coverage                                                                                                                                                        |
+| Dev compose           | Docker compose env setup in [Compose Project](https://github.com/Stark-Tech-Group/stg-devops-compose) with all dependencies for local development                                             |
+| Dev compose dependecy | Added to all projects in the [Compose Project](https://github.com/Stark-Tech-Group/stg-devops-compose) that depend on the project                                                             |
+| Read Me               | Read me created with description and basic requirements for local dev ex. [ReadMe](https://github.com/Stark-Tech-Group/go-template-repo/blob/dev/README.md)                                   |
+| Logging               | Logging framework implemented according to langauge and used judiciously. [Loggin](https://controlfreak.atlassian.net/wiki/spaces/TEAM/pages/1780973580/Logging+Standards)                    |
+| Error handling        | Proper error handling and responses based on [HTTP Response Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)                                                                  |
+| Docker hub Setup      | Create docker repository [Hub](https://hub.docker.com/)                                                                                                                                       |
+| Kubernetes setup      | Service, Deployment, Config, and Secrets created in [K8 Project](https://github.com/Stark-Tech-Group/stg-k8-config)                                                                           |
+| Validate CI/CD        | Validate ci/cd and validate a full pr->merge->test->deploy cycle                                                                                                                              |
