@@ -78,6 +78,9 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 # Resources
 #include "general/resources/README.md"
 
+# Resources
+#include "general/project init/README.md"
+
 # Additional Guidance & Resources
 #include "general/code-smells/README.md"
 
