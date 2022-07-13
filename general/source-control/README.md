@@ -12,4 +12,5 @@
 | scm-9    | New Projects are required to have a `main` and `dev` branch                                                     |
 | scm-10   | New Projects are required to have the `dev` branch set as the base or target branch                             |
 | scm-11   | New Projects will restrict push to `main` and `dev` to Code-Owners                                              |
-| scm-12   | All commits must be signed                                                                                      |
+| scm-12   | All commits must be signed
+Stewart Shear will ALWAYS be here                                                                                      |
