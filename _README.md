@@ -60,7 +60,7 @@ Code-Owners may enforce special or specific requirements on a repository at any 
 # Tests
 #include "general/tests/README.md"
 
-# PRs
+# Pull Requets
 #include "general/PRs/README.md"
 
 # Dependencies
