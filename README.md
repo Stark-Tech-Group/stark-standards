@@ -391,17 +391,29 @@ function getUserById(personId PersonId) {
 
 
 
-# PRs
-| Code  | Description                                                                                         |
-|-------|-----------------------------------------------------------------------------------------------------|
-| pur-1 | All PRs start off as drafts                                                                         |
-| pur-2 | Make sure to set reviewers and assignees                                                            |
-| pur-3 | Include Jira issue and brief description of project in Updates                                      |
-| pur-4 | Give brief description of changes made in Important Notes                                           |
-| pur-5 | PRs remain drafts until all sonar checks pass                                                       |
-| pur-6 | Once all sonar checks pass, mark PR as ready for review                                             |
-| pur-7 | If PR does not pass review, mark it as a draft again                                                |
-| pur-8 | Once PR passes review, either merge into feature branch or await merge into dev/main by code owners |
+# Pull Requets
+|  Code  | Description                                                                                                            |
+|--------|------------------------------------------------------------------------------------------------------------------------|
+| pur-01 | Pull requests must start as a draft and must pass all checks and standards prior to becoming ready for review       |
+| pur-02 | Pull requests must be approved by at least one CODEOWNER prior to being merged into dev or main                        |
+| pur-03 | Pull requests must follow a pull request template for checks and descriptions                                          |
+| pur-04 | Pull requests must include a linked issue number and brief description of project in Updates                           |
+| pur-05 | Pull requests should only address one linked issue at a time or many issues of a single epic                           |
+| pur-06 | Pull requests must note if the updates include breaking changes                                                        |
+| pur-07 | If available, pull request must include passing static code analysis checks prior to merging into dev or main          |
+| pur-08 | Pull requests older than 14 days must be closed or sent back to draft for updates                                      |
+| pur-09 | Pull requests should be approved or closed within 72 hours                                                             |
+| pur-10 | Standard branch names include main, dev, feature, bug, hotfix                                                          |
+| pur-11 | Pull requests into feature must contain features and improvements                                                      |
+| pur-12 | Pull requests into bug must contain bug fixes                                                                          |
+| pur-13 | Pull requests into hotfix must contain fixes that need to be expedited and are usually reserved for unplanned outages  |
+| pur-14 | Pull requests names must follow the pattern of (feature\|bug\|hotfix)/\$Ticket\_Description                            |
+| pur-15 | Automated pull requests must be in their own named branch and not in standard branches                                 |
+| pur-16 | Automated pull requests must follow standards and checks                                                               |
+| pur-17 | All conversations must be resolved before a pull request it merged                                                     |
+| pur-18 | Pull requests must be updated with the latest code from the merging branch prior to review                             |
+
+
 
 # Dependencies
 | Code  | Description                                                    |
@@ -768,6 +780,28 @@ For more information regarding code smell you may refer to: https://en.wikipedia
 6.	**Excessive comments**: a class, function or method has irrelevant or trivial comments. A comment on an attribute setter/getter is a good example.
 7.	**God Objects**: a class that has lots of responsibilities and is low cohesive.
 8.	**Excessively long line of code (or God Line)**: A line of code which is too long, making the code difficult to read, understand, debug, refactor, or even identify possibilities of software reuse. Example
+
+
+## Operations
+
+### Working Agreements
+1. [Reduce issue cycle time](https://app.swarmia.com/working-agreements/explore/max-issue-age?teamId=af3a9099-2652-4f4a-80e3-df661f35fe55)
+   * If a task is in-progress for more than 3 days (Jira days-in-status), the project manager will Flag the task (Jira feature)
+   * If a team member sees a task is flagged, he/she should reach out to the assignee of the task for a review
+   * The reviewing task member un-flags and follows up with project manager or comments on the ticket
+   * Feedback and discussion is logged via the issue comments
+   ```
+   1. The PM would flag that issue(possibly automated by Jira Automations)
+   2. A team member would see that it's flagged and reach out to the assignee for a review/screen share
+   3. Reviewing team member would then unflag the issue after review
+   4. Reviewing team member would provide PM with any insights/perspective/notes on the reason for the delay via Jira comments
+   5. PM, Reviewing team member, and assignee would then decide on a course of action. 
+      * Continue
+      * Reviewer take over, or 
+      * Pair programming
+      * Reset to to-do
+   ```
+
 
 
 (End of Guide)
