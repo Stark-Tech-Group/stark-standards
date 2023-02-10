@@ -1,7 +1,8 @@
 name: publish
 on:
   push:
-    branches: [ dev ]
+    branches:
+      - "feature/**"
   workflow_dispatch:
   
 jobs:
@@ -16,7 +17,11 @@ jobs:
       - run: npm install
       - run: npm install markdown-include --save
       - run: node ./node_modules/markdown-include/bin/cli.js ./markdown.json
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
       - uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 'dev'
+          BRANCH_NAME: ${{ steps.extract_branch.outputs.branch }}
