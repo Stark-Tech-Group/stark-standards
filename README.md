@@ -76,7 +76,7 @@ const page = book.getPage(1)
 ```
 
 </td></tr>
-<tr><td> g8  </td><td> Use meaning full names 
+<tr><td> g8  </td><td> Use meaningful names 
 
 ```javascript
 //avoid:
