@@ -76,7 +76,7 @@ const page = book.getPage(1)
 ```
 
 </td></tr>
-<tr><td> g8  </td><td> Use meaningful names 
+<tr><td> g8  </td><td> Use meaning full names 
 
 ```javascript
 //avoid:
@@ -371,6 +371,10 @@ function getUserById(personId PersonId) {
 }
 ```
 </td></tr>
+<tr><td> sec-33  </td><td> Do not run containers (ex Dockerfile) as ROOT </td></tr>
+<tr><td> sec-34  </td><td> Use a minimal base image for containers (ex alpine) </td></tr>
+<tr><td> sec-35  </td><td> Containers should be immutable,  no data inside the container should change. Use volumes for any data that needs to persist or change</td></tr>
+
 
 </tbody>
 </table>
@@ -790,17 +794,11 @@ For more information regarding code smell you may refer to: https://en.wikipedia
    * If a team member sees a task is flagged, he/she should reach out to the assignee of the task for a review
    * The reviewing task member un-flags and follows up with project manager or comments on the ticket
    * Feedback and discussion is logged via the issue comments
-   ```
-   1. The PM would flag that issue(possibly automated by Jira Automations)
-   2. A team member would see that it's flagged and reach out to the assignee for a review/screen share
-   3. Reviewing team member would then unflag the issue after review
-   4. Reviewing team member would provide PM with any insights/perspective/notes on the reason for the delay via Jira comments
-   5. PM, Reviewing team member, and assignee would then decide on a course of action. 
+   * Follow-up should result in one of the following:
       * Continue
-      * Reviewer take over, or 
-      * Pair programming
-      * Reset to to-do
-   ```
+      * Reassign task
+      * Add additional resources
+      * Close task or move back to to-do
 
 
 

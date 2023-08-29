@@ -110,6 +110,10 @@ function getUserById(personId PersonId) {
 }
 ```
 </td></tr>
+<tr><td> sec-33  </td><td> Do not run containers (ex Dockerfile) as ROOT </td></tr>
+<tr><td> sec-34  </td><td> Use a minimal base image for containers (ex alpine) </td></tr>
+<tr><td> sec-35  </td><td> Containers should be immutable,  no data inside the container should change. Use volumes for any data that needs to persist or change</td></tr>
+
 
 </tbody>
 </table>
