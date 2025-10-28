@@ -53,7 +53,7 @@ For more information regarding PostgreSQL performance optimization, refer to: ht
 
 4. **Use LISTEN/NOTIFY for event-driven updates**: Instead of polling the database repeatedly, use PostgreSQL's LISTEN/NOTIFY mechanism for real-time notifications of data changes.
 
-5. **Set appropriate statement timeouts**: Use statement_timeout to prevent runaway queries from blocking real-time operations. Failed fast queries allow retry logic and prevent cascading failures.
+5. **Set appropriate statement timeouts**: Use statement_timeout to prevent runaway queries from blocking real-time operations. Failing fast queries allow retry logic and prevent cascading failures.
 
 6. **Cache frequently accessed data**: Use application-level caching (Redis, Memcached) for data that doesn't change frequently. Reduces database load and improves response times for real-time queries.
 
